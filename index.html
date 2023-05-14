@@ -17,30 +17,29 @@
 
     <body>
         <header class="navigation">
-        <div class="logo-container">
-        <a href="images/drawnologo 2.png">
-            <img src="images/drawnologo 2.png">
-        </a>
-            <h1>Adriano Martinez</h1>
-        </div>
+            <div class="logo-container">
+                <a href="images/drawnologo 2.png">
+                    <img src="images/drawnologo 2.png" />
+                </a>
+                <h1>Adriano Martinez</h1>
+            </div>
             <nav>
                 <ul>
-                    <h4>
                     <li class="inline-block">
-                        <a href="link">about</a>
+                        <h4><a href="link">about</a></h4>
                     </li>
-                    
+                            
                     <li class="inline-block">
-                        <a href="link">work</a>
+                        <h4><a href="link">work</a></h4>
                     </li>
-                    
+                            
                     <li class="inline-block">
-                        <a href="link">résumé</a>
+                        <h4><a href="link">résumé</a></h4>
                     </li>
-                    </h4>
                 </ul>        
             </nav>
-    </header>
+        </header>
+        
         
         <section class="heroImg">
             <div class="content">
@@ -51,7 +50,13 @@
                     A junior UX Designer from Southern Oregon.
                     </h2>
                 </p>
-                    <button class="button">Hire me!</button>
+                    <button id="hireMe" class="button">Hire me!</button>
+                    <div id="myModal" class="modal">
+                     <div class="modal-content">
+                     <p>Thank you!</p>
+                 </div>
+                </div>
+
             </div>
         </section>
 
@@ -119,7 +124,7 @@
                 </h4>
             </ul>
         </footer>
-
+        <script src="js/index.js"></script>
     </body>
     <script src="js/index.js"></script>
 </html>

@@ -5,152 +5,176 @@ typography
 */
 
 body {
-    font-family: "Merriweather", serif;
-  }
-  
-  h1 {
-    font-size: 64px;
-    font-weight: 400;
-  }
-  
-  h2 {
-    font-size: 44px;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 32px;
-  }
-  
-  h4 {
-    font-size: 24px;
-  }
-  
-  h5 {
-    font-size: 16px;
-  }
-  
-  h6 {
-  }
-  
-  p {
-    font-size: 16px;
-  }
-  
-  /* 
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+}
+
+p {
+  font-size: 16px;
+}
+
+/* 
   ========================================
   header 
   ========================================
   */
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #e8e2d8;
-    position: relative;
-    z-index: 1000;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-container img {
-    margin-right: 1rem;
-    width: 200px; /* Adjust the width to resize the header image */
-    height: auto;
-  }
-  
-  nav {
-    display: flex;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    margin-left: 1rem;
-  }
-  
-  /* heroImg */
-  .heroImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
-    padding: 30px;
-    margin-top: 2rem; /* Add spacing between the hero section and the header */
-  }
-  
-  .heroImg .content {
-    text-align: center;
-  }
-  
-  .heroImg .content h2 {
-    line-height: 1.5;
-  }
-  
-  .heroImg img.center {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .center {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-  }
-  
-  .content {
-    width: 900px;
-    margin: 0 auto;
-  }
-  
-  footer {
-    padding: 1%;
-    position: relative;
-    top: 250px;
-  }
-  
-  .section {
-    background-color: #e8e2d8;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .flexContainer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .workGrid {
-    text-align: center;
-  }
-  
-  .myWork {
-    padding: 80px;
-    text-align: center;
-  }
-  
-  .mySkills {
-    padding: 80px;
-    text-align: center;
-  }
 
-  .button {
-    padding: 20px
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #e8e2d8;
+  position: relative;
+  z-index: 1000;
+  flex-direction: row;
+}
 
-  .button: hover {
-    background: #2D1E3D;
-  }
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 1rem;
+  width: 200px; /* Adjust the width to resize the header image */
+  height: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+/* heroImg */
+.heroImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  padding: 30px;
+  margin-top: 2rem; /* Add spacing between the hero section and the header */
+}
+
+.heroImg .content {
+  text-align: center;
+}
+
+.heroImg .content h2 {
+  line-height: 1.5;
+}
+
+.heroImg img.center {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 1%;
+  position: relative;
+  top: 250px;
+}
+
+.section {
+  background-color: #e8e2d8;
+  width: 100%;
+  text-align: center;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.workGrid {
+  text-align: center;
+}
+
+.myWork {
+  padding: 80px;
+  text-align: center;
+}
+
+.mySkills {
+  padding: 80px;
+  text-align: center;
+}
+
+.button {
+  padding: 20px;
+}
+
+.button: hover {
+  background: #2d1e3d;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+
 
